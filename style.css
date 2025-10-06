@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  color: white;
+}
+
+#page1 {
+  height: 100vh;
+  width: 100%;
+  background-color: #111;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#page1 h1 {
+  font-size: 8.5vw;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 8.5vw;
+}
+#page1 h1 span {
+  display: inline-block;
+}
+
+#page1 h1 svg {
+  height: 6vw;
+  width: 6vw;
+  display: block;
+  cursor: pointer;
+  background-color: green;
+  border-radius: 50%;
+}
+
+#page1 p {
+  text-align: center;
+  font-weight: 400;
+  margin-top: 2vw;
+}
+
+#page1-something {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5vw;
+  margin-top: 1vw;
+}
+
+#page1-something h4 {
+  font-weight: 400;
+  font-size: 1vw;
+  text-transform: lowercase;
+  padding: 0.5vw;
+  border: 0.1vw solid white;
+  border-radius: 2vw;
+  cursor: pointer;
+}
+#page1-something h4:nth-last-child(2) {
+  border: none;
+  background-color: green;
+}
+
+#nav {
+  position: fixed;
+  /* background-color: rgb(0, 255, 68); */
+  display: flex;
+  align-items: flex-start;
+  height: 12vh;
+  width: 100%;
+  padding: 2vw 10.4vw;
+  justify-content: space-between;
+  background-color: #111;
+  z-index: 10;
+}
+
+nav h1 {
+  font-size: 1.6vw;
+}
+
+.nav-part2 {
+  display: flex;
+  gap: 2vw;
+  align-items: flex-start;
+  padding: 1vh 0;
+  position: relative;
+  z-index: 10;
+}
+
+.nav-part2 h4 {
+  font-size: 0.73vw;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 2.6vw;
+}
+
+.nav-part2 h5 {
+  margin-bottom: 1vw;
+  /* background-color: red; */
+  display: none;
+  overflow: hidden;
+}
+.nav-part2 h5 span {
+  font-size: 0.77vw;
+  font-weight: 400;
+  transform: translateY(25px);
+  display: inline-block;
+}
+
+#nav-btn {
+  background-color: #0ba34e;
+  display: flex;
+  align-items: center;
+  padding: 14px 20px;
+  font-size: 0.85vw;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 50px;
+  border: none;
+}
+#nav-btn svg {
+  height: 0.8vw;
+  margin-left: 1.6vw;
+}
+
+#nav-bottom {
+  width: 79%;
+  height: 0vh;
+  position: absolute;
+  /* background-color: red; */
+  top: 100%;
+  background-color: #111;
+  z-index: 9;
+  border-bottom: 1px solid #fff;
+}
+/* When nav is clicked, h1 moves behind it */
+
+#page2 {
+  height: 100vh;
+  width: 100%;
+  background-color: #111;
+}
