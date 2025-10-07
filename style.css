@@ -141,7 +141,6 @@ nav h1 {
   z-index: 9;
   border-bottom: 1px solid #fff;
 }
-/* When nav is clicked, h1 moves behind it */
 
 #page2 {
   height: 100vh;
